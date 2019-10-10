@@ -1,0 +1,326 @@
+@function rem($value) {
+    @return unquote(($value/1px)/16+"rem");
+}
+
+$easeTime:0.25s;
+$easeTimes:.5s;
+$marginTop: 65px;
+$marginBottom:10px;
+$mrTop:20px;
+
+$colors: ("solidBlack": "#111316",
+    "midnightBlack": "#2B3139",
+    "bgDarkGray": "#707070",
+    "bglightWhite": "#FCFCFC",
+    "darkWhite":"#FFFFFF",
+    "brMattGray":"#CFCFCF",
+    "fontBlack": "#434C58",
+    "bgpWhite": "#F1F1F2",
+    "fontGray": "#E1E1E1",
+    "hoverWhite": "#8A8A8A",
+    "hoverBgGray": "#42484F",
+    "darkRed": "#ff7d31"
+
+);
+
+.mr-top {
+    margin-top: $mrTop;
+}
+
+p {
+    color: #cec0c0;
+}
+
+@each $colorName,
+$colorValue in $colors {
+    .bg-#{$colorName} {
+        background-color:#{$colorValue};
+    }
+
+    .text-#{$colorName} {
+        color:#{$colorValue};
+    }
+}
+
+body {
+    @extend .bg-bgpWhite;
+    @extend .text-fontBlack;
+    font-family: 'Roboto', Sans-serif;
+    font-weight: 300;
+    word-spacing: rem(.4px);
+    letter-spacing: rem(.1px);
+
+    p {
+        line-height: rem(28px);
+    }
+}
+
+.section-navbar {
+    .navbar {
+        padding-left: 0;
+
+        .navbar-brand {
+            span {
+                @extend .text-darkWhite;
+                font-weight: 400;
+                text-transform: lowercase;
+                font-size: 25px;
+                padding: 17px 59px;
+                @extend .bg-solidBlack;
+            }
+        }
+
+        @extend .bg-darkWhite;
+
+        .nav-link {
+            @extend .text-fontBlack;
+            font-size: 13px;
+            font-weight: 400;
+
+            &:hover {
+                background: none;
+            }
+        }
+
+        .dropdown {
+            .dropdown-menu {
+                left: -100% !important;
+                transition: all ease $easeTime;
+                @extend .bg-midnightBlack;
+                border: none;
+                padding: 0;
+                box-shadow: 0px 0px 0px rgb(142, 142, 142), 0px 0px 0px rgb(160, 150, 150), 0px 0px 15px rgb(189, 188, 188);
+
+                .dropdown-item {
+                    @extend .text-darkWhite;
+                    font-size: rem(14px);
+
+                    &:hover {
+                        @extend .bg-solidBlack;
+                        transition: all ease $easeTimes;
+                        @extend .text-bgDarkGray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wrapper {
+    margin-top: rem($marginTop);
+
+    .sideMenu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: rem($marginTop) auto auto;
+        width: rem(238px);
+        transition: all ease $easeTime;
+        transform: translateX(-100%);
+
+        .navbar-nav {
+            max-height: calc(100% - 0px);
+            height: calc(100% - 0px);
+            overflow-y: scroll;
+            width:100%;
+            position:absolute;
+            @extend .bg-midnightBlack;
+
+            .nav-link {
+                position: relative;
+                -webkit-transition: all 0.4s ease;
+                -o-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+            }
+        }
+
+        .navbar-nav::-webkit-scrollbar {
+            @extend .bg-midnightBlack;
+            width: 5px;
+            border-radius: 20px;
+        }
+
+        .navbar-nav::-webkit-scrollbar-track {
+            @extend .bg-bgDarkGray;
+            border-radius: 20px;
+        }
+
+        .navbar-nav::-webkit-scrollbar-thumb {
+            @extend .bg-darkRed;
+            border-radius: 20px;
+        }
+
+        .navbar-nav::-webkit-scrollbar-button {
+            display: none
+        }
+
+    }
+
+    .content {
+        width: 100%;
+        margin-left: rem(0px);
+        transition: all ease $easeTime;
+    }
+
+    &.active {
+        .sideMenu {
+            transform: translateX(0);
+        }
+    }
+}
+
+.nav-link {
+    display: block;
+    white-space: nowrap;
+    padding-left:rem(5px) !important;
+
+    .icon {
+        margin-right: rem(4px);
+        font-size: rem(16px);
+        vertical-align: middle;
+        height: rem(25px);
+        width: rem(25px);
+        @extend .text-darkWhite;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        font-size: rem(13px);
+        font-weight: 400;
+        @extend .text-darkWhite;
+    }
+
+    &:hover,
+    &.active {
+        @extend .bg-hoverBgGray;
+        transition: all ease $easeTime;
+
+        .icon {
+            @extend .text-darkRed;
+        }
+
+        .text {
+            @extend .text-hoverWhite;
+        }
+    }
+    
+}
+.nav-link:focus{
+    @extend .bg-hoverBgGray;
+}
+
+
+
+
+// for-dropdown-menu
+.sideDrop .uniqueMenu {
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.sideDrop .uniqueMenu i.arrow {
+    position: absolute;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    top: rem(8px);
+    right: 0;
+}
+
+.sideDrop li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 12px;
+}
+
+.sideDrop li.open {
+    i.fa-chevron-down {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+.submenuMenu {
+    display: none;
+    padding:0;
+    margin-top:rem(10px);
+    margin-bottom:rem(10px);
+
+    li {
+        padding: rem(10px 0);
+        padding-left: rem(40px);
+        list-style: none;
+
+        &:hover {
+            transition: all ease $easeTime;
+            @extend .bg-hoverBgGray;
+            a{
+                @extend .text-hoverWhite;
+            }
+        }
+
+        a {
+            display: block;
+            padding: 8px 0;
+            text-decoration: none;
+            @extend .text-darkWhite;
+            -webkit-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+            font-size: rem(14px);
+        }
+    }
+}
+
+// for-dropdown-menu
+
+
+//main content desing start
+
+
+//main content desing end
+
+
+
+// start responsive
+@media (min-width:992px) {
+    .wrapper {
+        .sideMenu {
+            transform: translateX(0);
+        }
+
+        .content {
+            margin-left: rem(238px);
+        }
+
+        &.active {
+            .sideMenu {
+                width: rem(80px);
+
+                .nav-link {
+                    text-align: center;
+
+                    .icon {
+                        margin-right: 0;
+                    }
+
+                    .text {
+                        display: none;
+                    }
+                }
+            }
+
+            .content {
+                margin-left: rem(88px);
+            }
+        }
+    }
+}

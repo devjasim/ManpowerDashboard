@@ -1,0 +1,229 @@
+.mr-top {
+  margin-top: 20px; }
+
+p {
+  color: #cec0c0; }
+
+.bg-solidBlack, .section-navbar .navbar .navbar-brand span, .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #111316; }
+
+.text-solidBlack {
+  color: #111316; }
+
+.bg-midnightBlack, .section-navbar .navbar .dropdown .dropdown-menu, .wrapper .sideMenu .navbar-nav, .wrapper .sideMenu .navbar-nav::-webkit-scrollbar {
+  background-color: #2B3139; }
+
+.text-midnightBlack {
+  color: #2B3139; }
+
+.bg-bgDarkGray, .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-track {
+  background-color: #707070; }
+
+.text-bgDarkGray, .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item:hover {
+  color: #707070; }
+
+.bg-bglightWhite {
+  background-color: #FCFCFC; }
+
+.text-bglightWhite {
+  color: #FCFCFC; }
+
+.bg-darkWhite, .section-navbar .navbar {
+  background-color: #FFFFFF; }
+
+.text-darkWhite, .section-navbar .navbar .navbar-brand span, .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item, .nav-link .icon, .nav-link .text, .submenuMenu li a {
+  color: #FFFFFF; }
+
+.bg-brMattGray {
+  background-color: #CFCFCF; }
+
+.text-brMattGray {
+  color: #CFCFCF; }
+
+.bg-fontBlack {
+  background-color: #434C58; }
+
+.text-fontBlack, body, .section-navbar .navbar .nav-link {
+  color: #434C58; }
+
+.bg-bgpWhite, body {
+  background-color: #F1F1F2; }
+
+.text-bgpWhite {
+  color: #F1F1F2; }
+
+.bg-fontGray {
+  background-color: #E1E1E1; }
+
+.text-fontGray {
+  color: #E1E1E1; }
+
+.bg-hoverWhite {
+  background-color: #8A8A8A; }
+
+.text-hoverWhite, .nav-link:hover .text, .nav-link.active .text, .submenuMenu li:hover a {
+  color: #8A8A8A; }
+
+.bg-hoverBgGray, .nav-link:hover, .nav-link.active, .nav-link:focus, .submenuMenu li:hover {
+  background-color: #42484F; }
+
+.text-hoverBgGray {
+  color: #42484F; }
+
+.bg-darkRed, .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-thumb {
+  background-color: #ff7d31; }
+
+.text-darkRed, .nav-link:hover .icon, .nav-link.active .icon {
+  color: #ff7d31; }
+
+body {
+  font-family: 'Roboto', Sans-serif;
+  font-weight: 300;
+  word-spacing: 0.025rem;
+  letter-spacing: 0.00625rem; }
+  body p {
+    line-height: 1.75rem; }
+
+.section-navbar .navbar {
+  padding-left: 0; }
+  .section-navbar .navbar .navbar-brand span {
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 25px;
+    padding: 17px 59px; }
+  .section-navbar .navbar .nav-link {
+    font-size: 13px;
+    font-weight: 400; }
+    .section-navbar .navbar .nav-link:hover {
+      background: none; }
+  .section-navbar .navbar .dropdown .dropdown-menu {
+    left: -100% !important;
+    transition: all ease 0.25s;
+    border: none;
+    padding: 0;
+    box-shadow: 0px 0px 0px #8e8e8e, 0px 0px 0px #a09696, 0px 0px 15px #bdbcbc; }
+    .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item {
+      font-size: 0.875rem; }
+      .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item:hover {
+        transition: all ease 0.5s; }
+
+.wrapper {
+  margin-top: 4.0625rem; }
+  .wrapper .sideMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: 4.0625rem auto auto;
+    width: 14.875rem;
+    transition: all ease 0.25s;
+    transform: translateX(-100%); }
+    .wrapper .sideMenu .navbar-nav {
+      max-height: calc(100% - 0px);
+      height: calc(100% - 0px);
+      overflow-y: scroll;
+      width: 100%;
+      position: absolute; }
+      .wrapper .sideMenu .navbar-nav .nav-link {
+        position: relative;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease; }
+    .wrapper .sideMenu .navbar-nav::-webkit-scrollbar {
+      width: 5px;
+      border-radius: 20px; }
+    .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-track {
+      border-radius: 20px; }
+    .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-thumb {
+      border-radius: 20px; }
+    .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-button {
+      display: none; }
+  .wrapper .content {
+    width: 100%;
+    margin-left: 0rem;
+    transition: all ease 0.25s; }
+  .wrapper.active .sideMenu {
+    transform: translateX(0); }
+
+.nav-link {
+  display: block;
+  white-space: nowrap;
+  padding-left: 0.3125rem !important; }
+  .nav-link .icon {
+    margin-right: 0.25rem;
+    font-size: 1rem;
+    vertical-align: middle;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+  .nav-link .text {
+    font-size: 0.8125rem;
+    font-weight: 400; }
+  .nav-link:hover, .nav-link.active {
+    transition: all ease 0.25s; }
+
+.sideDrop .uniqueMenu {
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+.sideDrop .uniqueMenu i.arrow {
+  position: absolute;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  top: 0.5rem;
+  right: 0; }
+
+.sideDrop li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 12px; }
+
+.sideDrop li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.submenuMenu {
+  display: none;
+  padding: 0;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem; }
+  .submenuMenu li {
+    padding: 10px 0/1px/16rem;
+    padding-left: 2.5rem;
+    list-style: none; }
+    .submenuMenu li:hover {
+      transition: all ease 0.25s; }
+    .submenuMenu li a {
+      display: block;
+      padding: 8px 0;
+      text-decoration: none;
+      -webkit-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+      font-size: 0.875rem; }
+
+@media (min-width: 992px) {
+  .wrapper .sideMenu {
+    transform: translateX(0); }
+  .wrapper .content {
+    margin-left: 14.875rem; }
+  .wrapper.active .sideMenu {
+    width: 5rem; }
+    .wrapper.active .sideMenu .nav-link {
+      text-align: center; }
+      .wrapper.active .sideMenu .nav-link .icon {
+        margin-right: 0; }
+      .wrapper.active .sideMenu .nav-link .text {
+        display: none; }
+  .wrapper.active .content {
+    margin-left: 5.5rem; } }
+
+/*# sourceMappingURL=main.css.map */
