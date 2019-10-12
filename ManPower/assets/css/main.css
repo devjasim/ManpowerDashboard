@@ -31,7 +31,7 @@ p {
 .bg-darkWhite, .section-navbar .navbar {
   background-color: #FFFFFF; }
 
-.text-darkWhite, .section-navbar .navbar .navbar-brand span, .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item, .nav-link .icon, .nav-link .text, .submenuMenu li a {
+.text-darkWhite, .section-navbar .navbar .navbar-brand span, .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item, .sideMenu .nav-link .text, .submenuMenu li a {
   color: #FFFFFF; }
 
 .bg-brMattGray {
@@ -61,10 +61,10 @@ p {
 .bg-hoverWhite {
   background-color: #8A8A8A; }
 
-.text-hoverWhite, .nav-link:hover .text, .nav-link.active .text, .submenuMenu li:hover a {
+.text-hoverWhite, .sideMenu .nav-link:hover .text, .sideMenu .nav-link.active .text, .submenuMenu li:hover a {
   color: #8A8A8A; }
 
-.bg-hoverBgGray, .nav-link:hover, .nav-link.active, .nav-link:focus, .submenuMenu li:hover {
+.bg-hoverBgGray, .sideMenu .nav-link:hover, .sideMenu .nav-link.active, .submenuMenu li:hover {
   background-color: #42484F; }
 
 .text-hoverBgGray {
@@ -73,8 +73,32 @@ p {
 .bg-darkRed, .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-thumb {
   background-color: #ff7d31; }
 
-.text-darkRed, .nav-link:hover .icon, .nav-link.active .icon {
+.text-darkRed {
   color: #ff7d31; }
+
+.bg-bgmattGray, .section-footer {
+  background-color: #42484F; }
+
+.text-bgmattGray {
+  color: #42484F; }
+
+.bg-iconBg {
+  background-color: #d0b9a8; }
+
+.text-iconBg {
+  color: #d0b9a8; }
+
+.bg-iconHover {
+  background-color: #d6ebf7; }
+
+.text-iconHover, .wrapper .sideMenu a:hover .icon, .wrapper .sideMenu a.active .icon, .wrapper .sideMenu .nav-link:hover .icon, .wrapper .sideMenu .nav-link.active .icon {
+  color: #d6ebf7; }
+
+.bg-iconColor {
+  background-color: #C1BB93; }
+
+.text-iconColor, .wrapper .sideMenu .icon {
+  color: #C1BB93; }
 
 body {
   font-family: 'Roboto', Sans-serif;
@@ -106,6 +130,8 @@ body {
       font-size: 0.875rem; }
       .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item:hover {
         transition: all ease 0.5s; }
+  .section-navbar .navbar .dropdown-toggle:after {
+    display: none; }
 
 .wrapper {
   margin-top: 4.0625rem; }
@@ -118,6 +144,15 @@ body {
     width: 14.875rem;
     transition: all ease 0.25s;
     transform: translateX(-100%); }
+    .wrapper .sideMenu .icon {
+      margin-right: 0.25rem;
+      font-size: 0.875rem;
+      vertical-align: middle;
+      height: 1.5625rem;
+      width: 1.5625rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center; }
     .wrapper .sideMenu .navbar-nav {
       max-height: calc(100% - 0px);
       height: calc(100% - 0px);
@@ -145,23 +180,14 @@ body {
   .wrapper.active .sideMenu {
     transform: translateX(0); }
 
-.nav-link {
+.sideMenu .nav-link {
   display: block;
   white-space: nowrap;
   padding-left: 0.3125rem !important; }
-  .nav-link .icon {
-    margin-right: 0.25rem;
-    font-size: 1rem;
-    vertical-align: middle;
-    height: 1.5625rem;
-    width: 1.5625rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center; }
-  .nav-link .text {
+  .sideMenu .nav-link .text {
     font-size: 0.8125rem;
     font-weight: 400; }
-  .nav-link:hover, .nav-link.active {
+  .sideMenu .nav-link:hover, .sideMenu .nav-link.active {
     transition: all ease 0.25s; }
 
 .sideDrop .uniqueMenu {
@@ -177,7 +203,8 @@ body {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
   top: 0.5rem;
-  right: 0; }
+  right: 0;
+  font-size: 0.75rem; }
 
 .sideDrop li i.fa-chevron-down {
   right: 12px;
@@ -197,7 +224,7 @@ body {
   margin-bottom: 0.625rem; }
   .submenuMenu li {
     padding: 10px 0/1px/16rem;
-    padding-left: 2.5rem;
+    padding-left: 1.875rem;
     list-style: none; }
     .submenuMenu li:hover {
       transition: all ease 0.25s; }
@@ -209,6 +236,19 @@ body {
       -o-transition: all 0.25s ease;
       transition: all 0.25s ease;
       font-size: 0.875rem; }
+
+.section-footer {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  bottom: 0;
+  position: fixed;
+  height: 45px;
+  text-align: center; }
+  .section-footer .footer-title p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #fff; }
 
 @media (min-width: 992px) {
   .wrapper .sideMenu {
