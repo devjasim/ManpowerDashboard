@@ -5,13 +5,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-
     <title>manpower</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
@@ -19,46 +18,90 @@
     <!--==================
     start navbar    
     ===================-->
-    <div class="section-navbar">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <button class="navbar-toggler sideMenuToggler " type="button">
-                <span class="navbar-toggler-icon fas fa-bars"></span>
-            </button>
-            <a class="navbar-brand" href="#"><span>manpower</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon fas fa-bars"></span>
-            </button>
+    <header class="section-navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg fixed-top">
+                    <button class="navbar-toggler sideMenuToggler " type="button">
+                        <span class="navbar-toggler-icon fas fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span>manpower</span></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fas fa-bars"></span>
+                    </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link  " href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            My Account
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Setting</a>
-                            <a class="dropdown-item" href="#">View profile </a>
-                            <a class="dropdown-item" href="#">Logout</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                aria-label="Search"><span class="search"><i class="fas fa-search"></i></span>
+                        </form>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-comment-dots"></i><span class="badge badge-danger">9</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Setting</a>
+                                    <a class="dropdown-item" href="#">View profile </a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-clock"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Setting</a>
+                                    <a class="dropdown-item" href="#">View profile </a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-bell"></i><span class="badge badge-danger">9</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Setting</a>
+                                    <a class="dropdown-item" href="#">View profile </a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="far fa-check-square"></i><span class="badge badge-danger">9</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Setting</a>
+                                    <a class="dropdown-item" href="#">View profile </a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a style="width:50px; height:50px; border-radius:50%" class="nav-link dropdown-toggle"
+                                    href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <img style="width:100%;" src="assets/images/user.png" alt="">
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#"></a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something</a>
+                                </div>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a style="width:50px; height:50px; border-radius:50%" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img style="width:100%;" src="assets/images/user.png" alt="">
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#"></a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something</a>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </nav>
             </div>
-        </nav>
-    </div>
+        </div>
+    </header>
     <!--==================
     End navbar
     ====================-->
@@ -68,107 +111,108 @@
     ====================-->
     <div class="wrapper d-flex">
 
-         <!--===================
+        <!--===================
         start siademenu
         ====================-->
         <div class="sideMenu">
             <div class="sidebar bg-mattBlackLight">
                 <ul class="navbar-nav sideDrop" id="sideDrop">
                     <li class="nav-item mr-top">
-                        <a href="#" class="nav-link"><i class="fas fa-tachometer-alt icon"></i><span
-                                class="text">Account management</span></a>
+                        <a href="#" class="nav-link"><i class="icon fas fa-tools"></i><span class="text">Account
+                                management</span></a>
                     </li>
                     <li class="nav-item">
-                        <div class="uniqueMenu nav-link"><i class="fas icon fa-cart-plus">
+                        <div class="uniqueMenu nav-link"><i class="fas icon fa-landmark">
                             </i><span class="text">Brance Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li><a href="#">Create Brance</a></li>
-                            <li><a href="#">Brance Management</a></li>
-                            <li><a href="#">Report & Analytics</a></li>
+                            <li><a href="#"><i class="far fa-edit icon"></i>Create Brance</a></li>
+                            <li><a href="#"><i class="fas fa-tasks icon"></i>Brance Management</a></li>
+                            <li><a href="#"><i class="fas fa-bug icon"></i>Report & Analytics</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="icon fas fa-money-check-alt"></i><span
-                                class="text">Manpower Demand</span></a>
+                        <a href="#" class="nav-link"><i class="fas fa-id-card icon"></i><span class="text">Manpower
+                                Demand</span></a>
                     </li>
                     <li class="nav-item">
-                        <div class="uniqueMenu nav-link"><i class="fas fa-file-invoice-dollar icon"></i><span
+                        <div class="uniqueMenu nav-link"><i class="fas fa-users icon"></i></i><span
                                 class="text">Candidate Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li><a href="#">Entry New Candidate</a></li>
-                            <li><a href="#">Manage Candidate</a></li>
-                            <li><a href="#">Candidate Payment Details</a></li>
+                            <li><a href="#"><i class="fas fa-external-link-alt icon"></i>Entry New Candidate</a></li>
+                            <li><a href="#"><i class="fas fa-tasks icon"></i>Manage Candidate</a></li>
+                            <li><a href="#"><i class="fas fa-money-check-alt icon"></i>Candidate Payment Details</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <div class="uniqueMenu nav-link"><i class="fas fa-file-invoice-dollar icon"></i><span
-                                class="text">VISA Management</span><i class="fa fa-chevron-down arrow icon"></i>
+                        <div class="uniqueMenu nav-link"><i class="fab fa-cc-visa icon"></i><span class="text">VISA
+                                Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li><a href="#">Manage VISA</a></li>
-                            <li><a href="#">VISA Type</a></li>
-                            <li><a href="#">Select Candidate</a></li>
-                            <li><a href="#">Agent Involb</a></li>
-                            <li><a href="#">Payment</a></li>
+                            <li><a href="#"><i class="fas fa-tasks icon"></i>Manage VISA</a></li>
+                            <li><a href="#"><i class="fas fa-tasks icon"></i>VISA Type</a></li>
+                            <li><a href="#"><i class="fas fa-user-check icon"></i>Select Candidate</a></li>
+                            <li><a href="#"><i class="fab fa-magento icon"></i>Agent Involb</a></li>
+                            <li><a href="#"><i class="fas fa-tasks icon"></i>Payment</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="icon fas fa-money-check-alt"></i><span
+                        <a href="#" class="nav-link"><i class="fas fa-tasks icon"></i><span
                                 class="text">Sponsor Management</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-border-all icon"></i><span
-                                class="text ">Agent Management</span></a>
+                        <a href="#" class="nav-link"><i class="fas fa-border-all icon"></i><span class="text ">Agent
+                                Management</span></a>
                     </li>
                     <li class="nav-item">
-                        <div class="uniqueMenu nav-link"><i class="fas fa-file-invoice-dollar icon"></i><span
+                        <div class="uniqueMenu nav-link"><i class="fas fa-ticket-alt icon"></i></i><span
                                 class="text">Ticket Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li><a href="#">Manage VISA</a></li>
-                            <li><a href="#">Through Agent</a></li>
-                            <li><a href="#">Payment Tracking</a></li>
-                            <li><a href="#">Report & Analytics</a></li>
+                            <li><a href="#"><i class="fas fa-tasks icon"></i>Manage VISA</a></li>
+                            <li><a href="#"><i class="fas fa-strikethrough icon"></i>Through Agent</a></li>
+                            <li><a href="#"><i class="far fa-money-bill-alt icon"></i>Payment Tracking</a></li>
+                            <li><a href="#"><i class="fas fa-chart-bar icon"></i>Report & Analytics</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-border-all icon"></i><span
-                                class="text ">Express Management</span></a>
+                        <a href="#" class="nav-link"><i class="fas fa-shipping-fast icon"></i><span class="text ">Express
+                                Management</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-border-all icon"></i><span
-                                class="text ">Document Management</span></a>
+                        <a href="#" class="nav-link"><i class="fas fa-passport icon"></i><span class="text ">Document
+                                Management</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-border-all icon"></i><span
-                                class="text ">MOFA Management</span></a>
+                        <a href="#" class="nav-link"><i class="fas fa-vihara icon"></i><span class="text ">MOFA
+                                Management</span></a>
                     </li>
                     <li class="nav-item">
-                        <div class="uniqueMenu nav-link"><i class="fas fa-file-invoice-dollar icon"></i><span
+                        <div class="uniqueMenu nav-link"><i class="fas fa-bug icon"></i><span
                                 class="text">Report</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li><a href="#">Sponor</a></li>
-                            <li><a href="#">Candidate</a></li>
-                            <li><a href="#">Agent</a></li>
-                            <li><a href="#">MOFA</a></li>
-                            <li><a href="#">Accounting</a></li>
-                            <li><a href="#">Salary</a></li>
-                            <li><a href="#">Employee</a></li>
-                            <li><a href="#">Pending Payment</a></li>
+                            <li><a href="#"><i class="fas fa-desktop icon"></i>Sponor</a></li>
+                            <li><a href="#"><i class="fas fa-user-shield icon"></i>Candidate</a></li>
+                            <li><a href="#"><i class="fas fa-user-tie icon"></i>Agent</a></li>
+                            <li><a href="#"><i class="fas fa-vihara icon"></i>MOFA</a></li>
+                            <li><a href="#"><i class="far fa-user icon"></i>Accounting</a></li>
+                            <li><a href="#"><i class="fas fa-file-invoice icon"></i>Salary</a></li>
+                            <li><a href="#"><i class="fas fa-users icon"></i>Employee</a></li>
+                            <li><a href="#"><i class="fas fa-spinner icon"></i>Pending Payment</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-border-all icon"></i><span
-                                class="text ">Candidate Visa Stage</span></a>
+                        <a href="#" class="nav-link"><i class="fab fa-cc-visa icon"></i><span class="text ">Candidate
+                                Visa Stage</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-border-all icon"></i><span
+                        <a href="#" class="nav-link"><i class="fas fa-money-check-alt icon"></i><span
                                 class="text ">Payment</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mb-5">
                         <a href="#" class="nav-link sideMenuToggler"><i class="fas fa-border-all icon"></i><span
                                 class="text ">Resize</span></a>
                     </li>
@@ -183,6 +227,7 @@
         <!--=======================
          start content section 
          ====================== -->
+        
         <div class="content">
             <main class="section-main">
                 <div class="container-fluid">
@@ -225,12 +270,32 @@
     ====================== -->
 
 
+    <!--=======================
+    start footer section 
+    ====================== -->
+    <footer class="section-footer w-100">
+        <div class="contaienr-fluid">
+            <div class="row d-flex">
+                <div class="col-md-12">
+                    <div class="footer-title">
+                        <p>&copy; Copyright 2019 Printwizard all right reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--=======================
+    end footer section 
+    ====================== -->
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/vendors/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
 </html>
+

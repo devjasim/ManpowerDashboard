@@ -43,7 +43,7 @@ p {
 .bg-fontBlack {
   background-color: #434C58; }
 
-.text-fontBlack, body, .section-navbar .navbar .nav-link {
+.text-fontBlack, body, .section-navbar .navbar .nav-link, .section-navbar .navbar .navbar-nav .nav-item i {
   color: #434C58; }
 
 .bg-bgpWhite, body {
@@ -110,6 +110,11 @@ body {
 
 .section-navbar .navbar {
   padding-left: 0; }
+  .section-navbar .navbar form.form-inline {
+    position: relative; }
+    .section-navbar .navbar form.form-inline .search {
+      position: absolute;
+      right: 15px; }
   .section-navbar .navbar .navbar-brand span {
     font-weight: 400;
     text-transform: lowercase;
@@ -132,6 +137,20 @@ body {
         transition: all ease 0.5s; }
   .section-navbar .navbar .dropdown-toggle:after {
     display: none; }
+  .section-navbar .navbar .navbar-nav .nav-item {
+    padding: 0 5px; }
+    .section-navbar .navbar .navbar-nav .nav-item i {
+      margin-top: 12px;
+      font-size: 14px; }
+    .section-navbar .navbar .navbar-nav .nav-item .badge {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      border-radius: 50%;
+      padding: 0;
+      width: 15px;
+      height: 15px;
+      line-height: 15px; }
 
 .wrapper {
   margin-top: 4.0625rem; }
