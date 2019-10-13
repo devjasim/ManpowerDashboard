@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
 @function rem($value) {
     @return unquote(($value/1px)/16+"rem");
 }
@@ -23,14 +25,20 @@ $colors: ("solidBlack": "#111316",
     "bgmattGray": "#42484F",
     "iconBg": "#d0b9a8",
     "iconHover": "#d6ebf7",
-    "iconColor": "#C1BB93"
+    "iconColor": "#C1BB93",
+    "lightBlack": "#979797"
 
 );
 
 .mr-top {
     margin-top: $mrTop;
 }
-
+.mrTop{
+    margin-top:$marginTop;
+}
+.mr-left{
+    margin-left:-30px;
+}
 p {
     color: #cec0c0;
 }
@@ -62,11 +70,23 @@ body {
 .section-navbar {
     .navbar {
         padding-left: 0;
+        @extend .bg-darkWhite;
         form.form-inline{
             position:relative;
+            .form-control{
+                border:1px solid #cfcfcf;
+                &:focus{
+                    box-shadow:none;
+                }
+                &::placeholder{
+                    font-size:12px;
+                    @extend .text-brMattGray;
+                }
+            }
             .search{
                 position:absolute;
                 right:15px;
+                @extend .text-brMattGray;
             }
         }
 
@@ -80,8 +100,6 @@ body {
                 @extend .bg-solidBlack;
             }
         }
-
-        @extend .bg-darkWhite;
 
         .nav-link {
             @extend .text-fontBlack;
@@ -97,19 +115,21 @@ body {
             .dropdown-menu {
                 left: -100% !important;
                 transition: all ease $easeTime;
-                @extend .bg-midnightBlack;
+                @extend .bg-darkWhite;
                 border: none;
                 padding: 0;
                 box-shadow: 0px 0px 0px rgb(142, 142, 142), 0px 0px 0px rgb(160, 150, 150), 0px 0px 15px rgb(189, 188, 188);
 
                 .dropdown-item {
-                    @extend .text-darkWhite;
+                    @extend .text-midnightBlack;
                     font-size: rem(14px);
 
                     &:hover {
-                        @extend .bg-solidBlack;
                         transition: all ease $easeTimes;
                         @extend .text-bgDarkGray;
+                    }
+                    &:focus{
+                        background:none;
                     }
                 }
             }
@@ -150,6 +170,7 @@ body {
         width: rem(238px);
         transition: all ease $easeTime;
         transform: translateX(-100%);
+        z-index:1000;
         .icon {
             margin-right: rem(4px);
             font-size: rem(14px);
@@ -190,20 +211,24 @@ body {
             @extend .bg-midnightBlack;
             width: 5px;
             border-radius: 20px;
+            overflow-Y:hidden;
         }
 
         .navbar-nav::-webkit-scrollbar-track {
             @extend .bg-bgDarkGray;
             border-radius: 20px;
+            overflow-Y:hidden;
         }
 
         .navbar-nav::-webkit-scrollbar-thumb {
             @extend .bg-darkRed;
             border-radius: 20px;
+            overflow-Y:hidden;
         }
 
         .navbar-nav::-webkit-scrollbar-button {
-            display: none
+            display: none;
+            overflow-Y:hidden;
         }
 
     }
@@ -221,27 +246,31 @@ body {
     }
 }
 
-.sideMenu .nav-link {
-    display: block;
-    white-space: nowrap;
-    padding-left:rem(5px) !important;
-    
-    .text {
-        font-size: rem(13px);
-        font-weight: 400;
-        @extend .text-darkWhite;
-    }
-
-    &:hover,
-    &.active {
-        @extend .bg-hoverBgGray;
-        transition: all ease $easeTime;
-
+.sideMenu .nav-item{
+    margin-bottom:3px;
+    .nav-link {
+        display: block;
+        white-space: nowrap;
+        padding-left:rem(5px) !important;
+        
         .text {
-            @extend .text-hoverWhite;
+            font-size: rem(13px);
+            // font-weight: 400;
+            @extend .text-darkWhite;
         }
-    }
     
+        &:hover,
+        &.active,
+        &:focus {
+            @extend .bg-hoverBgGray;
+            transition: all ease $easeTime;
+    
+            .text {
+                @extend .text-hoverWhite;
+            }
+        }
+        
+    }
 }
 
 
@@ -291,8 +320,10 @@ body {
         padding: rem(10px 0);
         padding-left: rem(30px);
         list-style: none;
+        margin-bottom:3px;
 
-        &:hover {
+        &:hover,
+        &.active{
             transition: all ease $easeTime;
             @extend .bg-hoverBgGray;
             a{
@@ -319,6 +350,47 @@ body {
 
 //main content desing start
 
+.content {
+    margin-bottom:15px;
+    position:relative;
+    .separator{
+        margin-left:rem(5px);
+        margin-right:rem(5px);
+        margin-top:rem(18px);
+        margin-bottom:rem(5px);
+        padding-bottom:rem(20px);
+        @extend .bg-darkWhite;
+        border-radius:5px;
+        .heading{
+            padding-bottom:rem(20px);
+            font-size:rem(24px);
+            @extend .text-lightBlack;
+            font-weight:300;
+            border-bottom:1px solid #eeeeee;
+        }
+        .form-group{
+            margin-top:rem(25px);
+            label{
+                font-size:rem(13px);
+                @extend .text-midnightBlack;
+                font-weight:400;
+            }
+            .form-control{
+                border:1px solid #e1e1e1;
+                transition:all ease $easeTime;
+                &:focus{
+                    box-shadow:none;
+                    border:1px solid #cec0c0;
+                }
+                &::placeholder{
+                    @extend .text-fontGray;
+                    font-size:13px;
+                    font-weight:300;
+                }
+            }
+        }
+    }
+}
 
 //main content desing end
 
@@ -330,11 +402,12 @@ body {
     width:100%;
     display:block;
     overflow:hidden;
-    bottom:0;
-    position:fixed;
+    float:left;
+    position:absolute;
     @extend .bg-bgmattGray;
     height:45px;
     text-align:center;
+    height:auto;
     .footer-title{
         p{
             margin-top:10px;

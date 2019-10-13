@@ -35,7 +35,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <form class="form-inline my-2 my-lg-0">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                aria-label="Search"><span class="search"><i class="fas fa-search"></i></span>
+                                aria-label="Search"/><span class="search"><i class="fas fa-search"></i></span>
                         </form>
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item dropdown">
@@ -90,7 +90,7 @@
                                     aria-haspopup="true" aria-expanded="false">
                                     <img style="width:100%;" src="assets/images/user.png" alt="">
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu mr-left" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#"></a>
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <a class="dropdown-item" href="#">Something</a>
@@ -118,7 +118,7 @@
             <div class="sidebar bg-mattBlackLight">
                 <ul class="navbar-nav sideDrop" id="sideDrop">
                     <li class="nav-item mr-top">
-                        <a href="#" class="nav-link"><i class="icon fas fa-tools"></i><span class="text">Account
+                        <a href="index.html" class="nav-link"><i class="icon fas fa-tools"></i><span class="text">Account
                                 management</span></a>
                     </li>
                     <li class="nav-item">
@@ -126,7 +126,7 @@
                             </i><span class="text">Brance Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li><a href="#"><i class="far fa-edit icon"></i>Create Brance</a></li>
+                            <li  class="active"><a href="create_brance.html"><i class="far fa-edit icon"></i>Create Brance</a></li>
                             <li><a href="#"><i class="fas fa-tasks icon"></i>Brance Management</a></li>
                             <li><a href="#"><i class="fas fa-bug icon"></i>Report & Analytics</a></li>
                         </ul>
@@ -227,30 +227,86 @@
         <!--=======================
          start content section 
          ====================== -->
-        
         <div class="content">
             <main class="section-main">
                 <div class="container-fluid">
                     <!--create brance start-->
-                    <div class="row">
+                    <div class="row separator">
                         <div class="col-sm-12 my-3">
                             <h3 class="heading">Add New Brance </h3>
                         </div>
-                        <div class="col-md-8 offset-md-2">
+                        <div class="col-md-8 offset-md-1">
                             <div class="create-brance">
-                                <form>
+                                <form class="mr-top">
                                     <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 text-right col-form-label">Email</label>
+                                        <label for="branchName" class="col-sm-3 text-right col-form-label">Brnach Name</label>
                                         <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="staticEmail" value="email@example.com">
+                                        <input type="text" class="form-control" id="branchName" placeholder="email@example.com">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="inputPassword" class="col-sm-3 text-right col-form-label">passport expair date</label>
+                                        <label for="address" class="col-sm-3 text-right col-form-label">Address</label>
                                         <div class="col-sm-9">
-                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                        <input type="password" class="form-control" id="address" placeholder="Password">
                                         </div>
                                     </div>
+                                    <div class="form-group row">
+                                        <label for="country" class="col-sm-3 text-right col-form-label">Country</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" name="country" id="country">
+                                                <option value="selected">Select country</option>
+                                                <option value="BD">Bangladesh</option>
+                                                <option value="USA">America</option>
+                                                <option value="UK">London</option>
+                                                <option value="">china</option>
+                                                <option value="">Germany</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="state" class="col-sm-3 text-right col-form-label">State</label>
+                                        <div class="col-sm-9">
+                                        <input type="state" class="form-control" id="state" placeholder="Dhaka">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="country" class="col-sm-3 text-right col-form-label">City</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" name="country" id="country">
+                                                <option value="selected">Selecte city</option>
+                                                <option value="BD">Dhaka</option>
+                                                <option value="USA">Chicago</option>
+                                                <option value="UK">Bromley</option>
+                                                <option value="">Nanjing</option>
+                                                <option value="">Berlin</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="telephone" class="col-sm-3 text-right col-form-label">Telephone</label>
+                                        <div class="col-sm-9">
+                                        <input type="phone" class="form-control" id="telephone" placeholder="+880 1234568795">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-sm-3 text-right col-form-label">Email</label>
+                                        <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="email" placeholder="example@gamil.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="fax" class="col-sm-3 text-right col-form-label">Fax</label>
+                                        <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="fax" placeholder="568795">
+                                        </div>
+                                    </div>
+
+                                    <div class="button row">
+                                        <div class="col-md-9 offset-sm-3">
+                                            <button type="button" class="btn btn-dark">Create new brnace</button>
+                                        </div>
+                                    </div>
+                                    
                                 </form>
                             </div>
                         </div>
@@ -261,13 +317,13 @@
             </main>
         </div>
         <!--=======================
-         start content section 
+         end content section 
          ====================== -->
 
     </div>
-    <!--=======================
-    start content section 
-    ====================== -->
+    <!--===================
+    end wrapper
+    ====================-->
 
 
     <!--=======================

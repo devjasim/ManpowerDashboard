@@ -33,3 +33,9 @@ $(document).ready(function(){
 });
 
 
+function changeMe(sel){
+	sel.style.color="#ddd";
+	console.log(sel)
+}
+
+
