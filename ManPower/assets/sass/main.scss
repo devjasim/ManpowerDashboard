@@ -9,6 +9,7 @@ $easeTimes:.5s;
 $marginTop: 65px;
 $marginBottom:10px;
 $mrTop:20px;
+$mrtpTop:5px;
 
 $colors: ("solidBlack": "#111316",
     "midnightBlack": "#2B3139",
@@ -30,8 +31,12 @@ $colors: ("solidBlack": "#111316",
 
 );
 
+
 .mr-top {
     margin-top: $mrTop;
+}
+.mrtp-top{
+    margin-top: $mrtpTop;
 }
 .mrTop{
     margin-top:$marginTop;
@@ -64,6 +69,15 @@ body {
 
     p {
         line-height: rem(28px);
+        font-size:14px;
+        font-weight:300;
+    }
+    h4{
+        font-size:20px;
+        font-weight:400;
+        margin-bottom:0;
+        margin-top:20px;
+        @extend .text-midnightBlack;
     }
 }
 
@@ -160,6 +174,7 @@ body {
 
 .wrapper {
     margin-top: rem($marginTop);
+    min-height:100vh;
 
     .sideMenu {
         position: fixed;
@@ -192,9 +207,11 @@ body {
         }
 
         .navbar-nav {
-            max-height: calc(100% - 0px);
-            height: calc(100% - 0px);
-            overflow-y: scroll;
+            // max-height: calc(100% - 0px);
+            // height: calc(100% - 0px);
+            overflow-Y: auto;
+            overflow-X:hidden;
+            height:100%;
             width:100%;
             position:absolute;
             @extend .bg-midnightBlack;
@@ -211,25 +228,42 @@ body {
             @extend .bg-midnightBlack;
             width: 5px;
             border-radius: 20px;
-            overflow-Y:hidden;
+            overflow-X:hidden;
         }
 
         .navbar-nav::-webkit-scrollbar-track {
             @extend .bg-bgDarkGray;
             border-radius: 20px;
-            overflow-Y:hidden;
+            overflow-X:hidden;
         }
 
         .navbar-nav::-webkit-scrollbar-thumb {
             @extend .bg-darkRed;
             border-radius: 20px;
-            overflow-Y:hidden;
+            overflow-X:hidden;
         }
 
         .navbar-nav::-webkit-scrollbar-button {
             display: none;
-            overflow-Y:hidden;
+            overflow-X:hidden;
         }
+        // .nav-bar-nav::-moz-scrollbar-track{
+        //     @extend .bg-midnightBlack;
+        //     width: 5px;
+        //     border-radius: 20px;
+        //     overflow-X:hidden;
+        // }
+        // .navbar-nav::-moz-scrollbar-thumb {
+        //     @extend .bg-bgDarkGray;
+        //     border-radius: 20px;
+        //     overflow-X:hidden;
+        // }
+        // .navbar-nav::-moz-scrollbar-button{
+        //     @extend .bg-darkRed;
+        //     border-radius: 20px;
+        //     overflow-X:hidden;
+        // }
+
 
     }
 
@@ -352,7 +386,6 @@ body {
 
 .content {
     margin-bottom:15px;
-    position:relative;
     .separator{
         margin-left:rem(5px);
         margin-right:rem(5px);
@@ -389,6 +422,19 @@ body {
                 }
             }
         }
+        .button-bt{
+            padding-bottom:rem(100px);
+            .btn-dark{
+                margin-top:15px;
+                padding:10px 20px;
+                font-size:14px;
+                font-weight:300;
+                &:focus,
+                &.active:focus{
+                    box-shadow:none;
+                }
+            }
+        }
     }
 }
 
@@ -399,15 +445,13 @@ body {
 
 //footer section start
 .section-footer{
-    width:100%;
-    display:block;
-    overflow:hidden;
-    float:left;
-    position:absolute;
     @extend .bg-bgmattGray;
     height:45px;
     text-align:center;
-    height:auto;
+    position:absolute;
+    right:0;
+    left:0;
+    overflow:hidden;
     .footer-title{
         p{
             margin-top:10px;
@@ -452,3 +496,5 @@ body {
         }
     }
 }
+
+

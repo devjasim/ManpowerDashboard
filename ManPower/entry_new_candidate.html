@@ -127,7 +127,7 @@
                             </i><span class="text">Brance Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li  class="active"><a href="create_brance.html"><i class="far fa-edit icon"></i>Create Brance</a></li>
+                            <li  class=""><a href="create_brance.html"><i class="far fa-edit icon"></i>Create Brance</a></li>
                             <li><a href="#"><i class="fas fa-tasks icon"></i>Brance Management</a></li>
                             <li><a href="#"><i class="fas fa-bug icon"></i>Report & Analytics</a></li>
                         </ul>
@@ -141,7 +141,7 @@
                                 class="text">Candidate Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li><a href="entry_new_candidate.html"><i class="fas fa-external-link-alt icon"></i>Entry New Candidate</a></li>
+                            <li class="active"><a href="entry_new_candidate.html"><i class="fas fa-external-link-alt icon"></i>Entry New Candidate</a></li>
                             <li><a href="#"><i class="fas fa-tasks icon"></i>Manage Candidate</a></li>
                             <li><a href="#"><i class="fas fa-money-check-alt icon"></i>Candidate Payment Details</a>
                             </li>
@@ -153,7 +153,7 @@
                         </div>
                         <ul class="submenuMenu">
                             <li><a href="manage_visa.html"><i class="fas fa-tasks icon"></i>Manage VISA</a></li>
-                            <li><a href="visa_type.html"><i class="fas fa-tasks icon"></i>VISA Type</a></li>
+                            <li class=""><a href="visa_type.html"><i class="fas fa-tasks icon"></i>VISA Type</a></li>
                             <li><a href="#"><i class="fas fa-user-check icon"></i>Select Candidate</a></li>
                             <li><a href="#"><i class="fab fa-magento icon"></i>Agent Involb</a></li>
                             <li><a href="#"><i class="fas fa-tasks icon"></i>Payment</a></li>
@@ -228,21 +228,72 @@
         <!--=======================
          start content section 
          ====================== -->
-        <div class="content">
+         <div class="content">
             <main class="section-main">
                 <div class="container-fluid">
                     <!--create brance start-->
                     <div class="row separator">
                         <div class="col-sm-12 my-3">
-                            <h3 class="heading">Add New Brance </h3>
+                            <h3 class="heading">Entry New Candidate</h3>
                         </div>
                         <div class="col-md-8 offset-md-1">
                             <div class="create-brance">
                                 <form class="mr-top">
                                     <div class="form-group row">
-                                        <label for="branchName" class="col-sm-3 text-right col-form-label">Brnach Name</label>
+                                        <label for="passName" class="col-sm-3 text-right col-form-label">Passport Name</label>
                                         <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="branchName" placeholder="email@example.com">
+                                        <input type="text" class="form-control" id="passName" placeholder="Candidate Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="dbirth" class="col-sm-3 text-right col-form-label">Date Of Birth</label>
+                                        <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="dbirth" placeholder="dd.mm.yyyy">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="passNumber" class="col-sm-3 text-right col-form-label">Passport Number</label>
+                                        <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="passNumber" placeholder="12345641">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="pxDate" class="col-sm-3 text-right col-form-label">Passport Expire Date</label>
+                                        <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="pxDate" placeholder="dd.mm.yyyy">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row style">
+                                        <label for="country" class="col-sm-3 text-right col-form-label">Country</label>
+                                        <div class="col-sm-9" id="selectImg">
+                                            <select class="form-control" name="country" id="country">
+                                                <option value="selected">Select country</option>
+                                                <option value="BD">Bangladesh</option>
+                                                <option value="USA">America</option>
+                                                <option value="UK">London</option>
+                                                <option value="">china</option>
+                                                <option value="">Germany</option>
+                                                <option value="">Germany</option>
+                                                <option value="">Germany</option>
+                                                <option value="">Germany</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="gender" class="col-sm-3 text-right col-form-label">Gender </label>
+                                        <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="gender" placeholder="Write gender">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="sponsor" class="col-sm-3 text-right col-form-label">Sponsor </label>
+                                        <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="sponsor" placeholder="Sponsor name">
+                                        </div>
+                                    </div>
+                                    <div class="add-info row">
+                                        <div class="col-md-9 offset-sm-3">
+                                            <h4>Address Information</h4>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -286,28 +337,10 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="telephone" class="col-sm-3 text-right col-form-label">Telephone</label>
-                                        <div class="col-sm-9">
-                                        <input type="phone" class="form-control" id="telephone" placeholder="+880 1234568795">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="email" class="col-sm-3 text-right col-form-label">Email</label>
-                                        <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="email" placeholder="example@gamil.com">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="fax" class="col-sm-3 text-right col-form-label">Fax</label>
-                                        <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="fax" placeholder="568795">
-                                        </div>
-                                    </div>
 
                                     <div class="button-bt row">
                                         <div class="col-md-9 offset-sm-3">
-                                            <button type="submit" class="btn btn-dark">Create new brnace</button>
+                                            <button type="submit" class="btn btn-dark">Create new candidate</button>
                                         </div>
                                     </div>
                                     

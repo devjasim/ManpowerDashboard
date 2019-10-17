@@ -2,6 +2,9 @@
 .mr-top {
   margin-top: 20px; }
 
+.mrtp-top {
+  margin-top: 5px; }
+
 .mrTop {
   margin-top: 65px; }
 
@@ -20,7 +23,7 @@ p {
 .bg-midnightBlack, .wrapper .sideMenu .navbar-nav, .wrapper .sideMenu .navbar-nav::-webkit-scrollbar {
   background-color: #2B3139; }
 
-.text-midnightBlack, .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item, .content .separator .form-group label {
+.text-midnightBlack, body h4, .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item, .content .separator .form-group label {
   color: #2B3139; }
 
 .bg-bgDarkGray, .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-track {
@@ -119,7 +122,14 @@ body {
   word-spacing: 0.025rem;
   letter-spacing: 0.00625rem; }
   body p {
-    line-height: 1.75rem; }
+    line-height: 1.75rem;
+    font-size: 14px;
+    font-weight: 300; }
+  body h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 20px; }
 
 .section-navbar .navbar {
   padding-left: 0; }
@@ -174,7 +184,8 @@ body {
       line-height: 15px; }
 
 .wrapper {
-  margin-top: 4.0625rem; }
+  margin-top: 4.0625rem;
+  min-height: 100vh; }
   .wrapper .sideMenu {
     position: fixed;
     top: 0;
@@ -195,9 +206,9 @@ body {
       justify-content: center;
       align-items: center; }
     .wrapper .sideMenu .navbar-nav {
-      max-height: calc(100% - 0px);
-      height: calc(100% - 0px);
-      overflow-y: scroll;
+      overflow-Y: auto;
+      overflow-X: hidden;
+      height: 100%;
       width: 100%;
       position: absolute; }
       .wrapper .sideMenu .navbar-nav .nav-link {
@@ -208,16 +219,16 @@ body {
     .wrapper .sideMenu .navbar-nav::-webkit-scrollbar {
       width: 5px;
       border-radius: 20px;
-      overflow-Y: hidden; }
+      overflow-X: hidden; }
     .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-track {
       border-radius: 20px;
-      overflow-Y: hidden; }
+      overflow-X: hidden; }
     .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-thumb {
       border-radius: 20px;
-      overflow-Y: hidden; }
+      overflow-X: hidden; }
     .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-button {
       display: none;
-      overflow-Y: hidden; }
+      overflow-X: hidden; }
   .wrapper .content {
     width: 100%;
     margin-left: 0rem;
@@ -285,8 +296,7 @@ body {
       font-size: 0.875rem; }
 
 .content {
-  margin-bottom: 15px;
-  position: relative; }
+  margin-bottom: 15px; }
   .content .separator {
     margin-left: 0.3125rem;
     margin-right: 0.3125rem;
@@ -313,16 +323,23 @@ body {
         .content .separator .form-group .form-control::placeholder {
           font-size: 13px;
           font-weight: 300; }
+    .content .separator .button-bt {
+      padding-bottom: 6.25rem; }
+      .content .separator .button-bt .btn-dark {
+        margin-top: 15px;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 300; }
+        .content .separator .button-bt .btn-dark:focus, .content .separator .button-bt .btn-dark.active:focus {
+          box-shadow: none; }
 
 .section-footer {
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  float: left;
-  position: absolute;
   height: 45px;
   text-align: center;
-  height: auto; }
+  position: absolute;
+  right: 0;
+  left: 0;
+  overflow: hidden; }
   .section-footer .footer-title p {
     margin-top: 10px;
     font-size: 13px;
