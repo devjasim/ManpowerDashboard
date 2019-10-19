@@ -8,6 +8,9 @@
     <title>manpower</title>
     <!-- fontawesome -->
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
+    <!-- scrollbar  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <!-- scrollbar  -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
@@ -117,7 +120,7 @@
         ====================-->
         <div class="sideMenu">
             <div class="sidebar bg-mattBlackLight">
-                <ul class="navbar-nav sideDrop" id="sideDrop">
+                <ul class="navbar-nav sideDrop"  data-simplebar data-simplebar-auto-hide="false"  id="sideDrop">
                     <li class="nav-item mrtp-top">
                         <a href="index.html" class="nav-link"><i class="icon fas fa-tools"></i><span class="text">Account
                                 management</span></a>
@@ -172,7 +175,7 @@
                                 class="text">Ticket Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li><a href="#"><i class="fas fa-tasks icon"></i>Manage VISA</a></li>
+                            <li><a href="manage_ticket.html"><i class="fas fa-tasks icon"></i>Manage Ticket</a></li>
                             <li><a href="#"><i class="fas fa-strikethrough icon"></i>Through Agent</a></li>
                             <li><a href="#"><i class="far fa-money-bill-alt icon"></i>Payment Tracking</a></li>
                             <li><a href="#"><i class="fas fa-chart-bar icon"></i>Report & Analytics</a></li>
@@ -236,7 +239,7 @@
                         <div class="col-sm-12 my-3">
                             <h3 class="heading">Entry New Candidate</h3>
                         </div>
-                        <div class="col-md-8 offset-md-1">
+                        <div class="col-md-8 offset-md-2">
                             <div class="create-brance">
                                 <form class="mr-top">
                                     <div class="form-group row">
@@ -384,6 +387,9 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/vendors/js/jquery-3.4.1.min.js"></script>
     <!-- <script src="assets/vendors/js/bootstrap.bundle.min.js"></script> -->
+    <!-- scrollbar -->
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- scrollbar -->
     <script src="assets/vendors/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-select.min.js"></script>
     <script src="assets/js/main.js"></script>
