@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -125,7 +126,7 @@
                             </i><span class="text">Brance Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li  class="active"><a href="create_brance.html"><i class="far fa-edit icon"></i>Create Brance</a></li>
+                            <li  class=""><a href="create_brance.html"><i class="far fa-edit icon"></i>Create Brance</a></li>
                             <li><a href="brance_management.html"><i class="fas fa-tasks icon"></i>Brance Management</a></li>
                             <li><a href="#"><i class="fas fa-bug icon"></i>Report & Analytics</a></li>
                         </ul>
@@ -170,7 +171,7 @@
                                 class="text">Ticket Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li><a href="manage_ticket.html"><i class="fas fa-tasks icon"></i>Manage Ticket</a></li>
+                            <li class="active"><a href="manage_ticket.html"><i class="fas fa-tasks icon"></i>Manage Ticket</a></li>
                             <li><a href="#"><i class="fas fa-strikethrough icon"></i>Through Agent</a></li>
                             <li><a href="payment_tracking.html"><i class="far fa-money-bill-alt icon"></i>Payment Tracking</a></li>
                             <li><a href="#"><i class="fas fa-chart-bar icon"></i>Report & Analytics</a></li>
@@ -232,84 +233,121 @@
                     <!--create brance start-->
                     <div class="row separator">
                         <div class="col-sm-12 my-3">
-                            <h3 class="heading">Add New Brance </h3>
+                            <h3 class="heading bdr-none">
+                                Ticket Payment Details
+                                <span class="ml-auto">
+                                    <a href="#" class="mr-4"><i class="far fa-eye-slash"></i> Show alll</a>
+                                    <a href="#"><i class="fas fa-user-edit"></i> Add New Ticket</a>
+                                </span>
+                            </h3>
                         </div>
-                        <div class="col-md-8 offset-md-2">
-                            <div class="create-brance">
-                                <form class="mr-top">
-                                    <div class="form-group row">
-                                        <label for="branchName" class="col-sm-3 text-right col-form-label">Brnach Name</label>
-                                        <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="branchName" placeholder="email@example.com">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="address" class="col-sm-3 text-right col-form-label">Address</label>
-                                        <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="address" placeholder="House No. #50, Road No. #3, Section-7, Uttara, Dhaka-1230">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row style">
-                                        <label for="country" class="col-sm-3 text-right col-form-label">Country</label>
-                                        <div class="col-sm-9" id="selectImg">
-                                            <select class="form-control" name="country" id="country">
-                                                <option value="selected">Select country</option>
-                                                <option value="BD">Bangladesh</option>
-                                                <option value="USA">America</option>
-                                                <option value="UK">London</option>
-                                                <option value="">china</option>
-                                                <option value="">Germany</option>
-                                                <option value="">Germany</option>
-                                                <option value="">Germany</option>
-                                                <option value="">Germany</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="state" class="col-sm-3 text-right col-form-label">State</label>
-                                        <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="state" placeholder="Dhaka">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row style">
-                                        <label for="country" class="col-sm-3 text-right col-form-label">City</label>
-                                        <div class="col-sm-9">
-                                            <select class="form-control" name="country" id="country">
-                                                <option value="selected">Selecte city</option>
-                                                <option value="BD">Dhaka</option>
-                                                <option value="USA">Chicago</option>
-                                                <option value="UK">Bromley</option>
-                                                <option value="">Nanjing</option>
-                                                <option value="">Berlin</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="telephone" class="col-sm-3 text-right col-form-label">Telephone</label>
-                                        <div class="col-sm-9">
-                                        <input type="phone" class="form-control" id="telephone" placeholder="+880 1234568795">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="email" class="col-sm-3 text-right col-form-label">Email</label>
-                                        <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="email" placeholder="example@gamil.com">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="fax" class="col-sm-3 text-right col-form-label">Fax</label>
-                                        <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="fax" placeholder="568795">
-                                        </div>
-                                    </div>
-
-                                    <div class="button-bt row">
-                                        <div class="col-md-9 offset-sm-3">
-                                            <button type="submit" class="btn btn-dark">Create new brnace</button>
-                                        </div>
-                                    </div>
-                                    
-                                </form>
+                        <div class="col-md-12">
+                            <div class="table-design table-responsive-sm">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Ticket No.</th>
+                                            <th scope="col">Agent</th>
+                                            <th scope="col">Flight Date & Time</th>
+                                            <th scope="col">Candidate Name</th>
+                                            <th scope="col">Sponsor</th>
+                                            <th scope="col">Passport No.</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Paid</th>
+                                            <th scope="col">Balance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">TCK1235</th>
+                                            <td>Wizard Travel</td>
+                                            <th>16 Oct 2019, 12:30 PM</th>
+                                            <td>Abraham Galib</td>
+                                            <td>Abdul Aziz</td>
+                                            <th>852741</th>
+                                            <th>$1233.00</th>
+                                            <td>$1309.00</td>
+                                            <th>$233.00</th>
+                                        </tr>
+                                        <tr class=" tr-bg">
+                                            <th scope="row">TCK1235</th>
+                                            <td>Wizard Travel</td>
+                                            <th>16 Oct 2019, 12:30 PM</th>
+                                            <td>Abraham Galib</td>
+                                            <td>Abdul Aziz</td>
+                                            <th>852741</th>
+                                            <th>$1233.00</th>
+                                            <td>$1309.00</td>
+                                            <th>$233.00</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">TCK1235</th>
+                                            <td>Wizard Travel</td>
+                                            <th>16 Oct 2019, 12:30 PM</th>
+                                            <td>Abraham Galib</td>
+                                            <td>Abdul Aziz</td>
+                                            <th>852741</th>
+                                            <th>$1233.00</th>
+                                            <td>$1309.00</td>
+                                            <th>$233.00</th>
+                                        </tr>
+                                        <tr  class="tr-bg">
+                                            <th scope="row">TCK1235</th>
+                                            <td>Wizard Travel</td>
+                                            <th>16 Oct 2019, 12:30 PM</th>
+                                            <td>Abraham Galib</td>
+                                            <td>Abdul Aziz</td>
+                                            <th>852741</th>
+                                            <th>$1233.00</th>
+                                            <td>$1309.00</td>
+                                            <th>$233.00</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">TCK1235</th>
+                                            <td>Wizard Travel</td>
+                                            <th>16 Oct 2019, 12:30 PM</th>
+                                            <td>Abraham Galib</td>
+                                            <td>Abdul Aziz</td>
+                                            <th>852741</th>
+                                            <th>$1233.00</th>
+                                            <td>$1309.00</td>
+                                            <th>$233.00</th>
+                                        </tr>
+                                        <tr  class="tr-bg">
+                                            <th scope="row">TCK1235</th>
+                                            <td>Wizard Travel</td>
+                                            <th>16 Oct 2019, 12:30 PM</th>
+                                            <td>Abraham Galib</td>
+                                            <td>Abdul Aziz</td>
+                                            <th>852741</th>
+                                            <th>$1233.00</th>
+                                            <td>$1309.00</td>
+                                            <th>$233.00</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">TCK1235</th>
+                                            <td>Wizard Travel</td>
+                                            <th>16 Oct 2019, 12:30 PM</th>
+                                            <td>Abraham Galib</td>
+                                            <td>Abdul Aziz</td>
+                                            <th>852741</th>
+                                            <th>$1233.00</th>
+                                            <td>$1309.00</td>
+                                            <th>$233.00</th>
+                                        </tr>
+                                        <tr  class="tr-bg">
+                                            <th scope="row">TCK1235</th>
+                                            <td>Wizard Travel</td>
+                                            <th>16 Oct 2019, 12:30 PM</th>
+                                            <td>Abraham Galib</td>
+                                            <td>Abdul Aziz</td>
+                                            <th>852741</th>
+                                            <th>$1233.00</th>
+                                            <td>$1309.00</td>
+                                            <th>$233.00</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -354,4 +392,5 @@
 </body>
 
 </html>
+
 

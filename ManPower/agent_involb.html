@@ -125,7 +125,7 @@
                             </i><span class="text">Brance Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
-                            <li  class="active"><a href="create_brance.html"><i class="far fa-edit icon"></i>Create Brance</a></li>
+                            <li  class=""><a href="create_brance.html"><i class="far fa-edit icon"></i>Create Brance</a></li>
                             <li><a href="brance_management.html"><i class="fas fa-tasks icon"></i>Brance Management</a></li>
                             <li><a href="#"><i class="fas fa-bug icon"></i>Report & Analytics</a></li>
                         </ul>
@@ -153,7 +153,7 @@
                             <li><a href="manage_visa.html"><i class="fas fa-tasks icon"></i>Manage VISA</a></li>
                             <li><a href="visa_type.html"><i class="fas fa-tasks icon"></i>VISA Type</a></li>
                             <li><a href="select_candidate.html"><i class="fas fa-user-check icon"></i>Select Candidate</a></li>
-                            <li><a href="agent_involb.html"><i class="fab fa-magento icon"></i>Agent Involb</a></li>
+                            <li class="active"><a href="agent_involb.html"><i class="fab fa-magento icon"></i>Agent Involb</a></li>
                             <li><a href="payment_details.html"><i class="fas fa-tasks icon"></i>Payment</a></li>
                         </ul>
                     </li>
@@ -232,21 +232,21 @@
                     <!--create brance start-->
                     <div class="row separator">
                         <div class="col-sm-12 my-3">
-                            <h3 class="heading">Add New Brance </h3>
+                            <h3 class="heading">Agent Information</h3>
                         </div>
                         <div class="col-md-8 offset-md-2">
                             <div class="create-brance">
                                 <form class="mr-top">
                                     <div class="form-group row">
-                                        <label for="branchName" class="col-sm-3 text-right col-form-label">Brnach Name</label>
+                                        <label for="aName" class="col-sm-3 text-right col-form-label">Agent Name</label>
                                         <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="branchName" placeholder="email@example.com">
+                                            <input type="text" class="form-control" id="aName" placeholder="John Doe">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="address" class="col-sm-3 text-right col-form-label">Address</label>
+                                        <label for="aAddress" class="col-sm-3 text-right col-form-label">Agent Address</label>
                                         <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="address" placeholder="House No. #50, Road No. #3, Section-7, Uttara, Dhaka-1230">
+                                        <input type="date" class="form-control" id="aAddress" placeholder="50 Uttara, Dhaka-1230">
                                         </div>
                                     </div>
                                     <div class="form-group row style">
@@ -266,46 +266,21 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="state" class="col-sm-3 text-right col-form-label">State</label>
+                                        <label for="aPhone" class="col-sm-3 text-right col-form-label">Telephone</label>
                                         <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="state" placeholder="Dhaka">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row style">
-                                        <label for="country" class="col-sm-3 text-right col-form-label">City</label>
-                                        <div class="col-sm-9">
-                                            <select class="form-control" name="country" id="country">
-                                                <option value="selected">Selecte city</option>
-                                                <option value="BD">Dhaka</option>
-                                                <option value="USA">Chicago</option>
-                                                <option value="UK">Bromley</option>
-                                                <option value="">Nanjing</option>
-                                                <option value="">Berlin</option>
-                                            </select>
+                                            <input type="phone" class="form-control" id="aPhone" placeholder="01 54432141">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="telephone" class="col-sm-3 text-right col-form-label">Telephone</label>
+                                        <label for="aEmail" class="col-sm-3 text-right col-form-label">Email</label>
                                         <div class="col-sm-9">
-                                        <input type="phone" class="form-control" id="telephone" placeholder="+880 1234568795">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="email" class="col-sm-3 text-right col-form-label">Email</label>
-                                        <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="email" placeholder="example@gamil.com">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="fax" class="col-sm-3 text-right col-form-label">Fax</label>
-                                        <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="fax" placeholder="568795">
+                                        <input type="phone" class="form-control" id="aEmail" placeholder="example@gmail.com">
                                         </div>
                                     </div>
 
                                     <div class="button-bt row">
                                         <div class="col-md-9 offset-sm-3">
-                                            <button type="submit" class="btn btn-dark">Create new brnace</button>
+                                            <button type="submit" class="btn btn-dark">Save</button>
                                         </div>
                                     </div>
                                     

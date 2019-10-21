@@ -26,7 +26,7 @@ p {
 .bg-midnightBlack, .wrapper .sideMenu .navbar-nav {
   background-color: #2B3139; }
 
-.text-midnightBlack, body h4, .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item, .content .separator .form-group label, .table-design .table thead th, .table-design .table tbody th, .table-design .table tbody td {
+.text-midnightBlack, body h4, .section-navbar .navbar .dropdown .dropdown-menu .dropdown-item, .content .separator .form-group label, .content .heading span a, .table-design .table thead th, .table-design .table tbody th, .table-design .table tbody td {
   color: #2B3139; }
 
 .bg-bgDarkGray {
@@ -322,6 +322,13 @@ body {
         font-weight: 300; }
         .content .separator .button-bt .btn-dark:focus, .content .separator .button-bt .btn-dark.active:focus {
           box-shadow: none; }
+
+.content .heading span {
+  float: right; }
+  .content .heading span a {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 400; }
 
 .bdr-none {
   border-bottom: none !important; }
