@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/sass/main.css">
+    <link rel="stylesheet" href="assets/sass/responsive.css">
 </head>
 
 <body>
@@ -26,57 +27,55 @@
                         <span class="navbar-toggler-icon fas fa-bars"></span>
                     </button>
                     <a class="navbar-brand" href="#"><span>manpower</span></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon fas fa-bars"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <form class="form-inline my-2 my-lg-0">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                aria-label="Search"/><span class="search"><i class="fas fa-search"></i></span>
+                                aria-label="Search"><span class="search"><i class="fas fa-search"></i></span>
                         </form>
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item dropdown">
-                                <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                <a class="nav-link  " href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                     <i class="far fa-comment-dots"></i><span class="badge badge-danger">9</span>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Setting</a>
                                     <a class="dropdown-item" href="#">View profile </a>
                                     <a class="dropdown-item" href="#">Logout</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                <a class="nav-link  " href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                     <i class="far fa-clock"></i>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Setting</a>
                                     <a class="dropdown-item" href="#">View profile </a>
                                     <a class="dropdown-item" href="#">Logout</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                <a class="nav-link  " href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                     <i class="far fa-bell"></i><span class="badge badge-danger">9</span>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Setting</a>
                                     <a class="dropdown-item" href="#">View profile </a>
                                     <a class="dropdown-item" href="#">Logout</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                <a class="nav-link  " href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                     <i class="far fa-check-square"></i><span class="badge badge-danger">9</span>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" >
                                     <a class="dropdown-item" href="#">Setting</a>
                                     <a class="dropdown-item" href="#">View profile </a>
                                     <a class="dropdown-item" href="#">Logout</a>
@@ -86,11 +85,11 @@
 
                             <li class="nav-item dropdown">
                                 <a style="width:50px; height:50px; border-radius:50%" class="nav-link dropdown-toggle"
-                                    href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                     <img style="width:100%;" src="assets/images/user.png" alt="">
                                 </a>
-                                <div class="dropdown-menu mr-left" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" >
                                     <a class="dropdown-item" href="#"></a>
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <a class="dropdown-item" href="#">Something</a>
@@ -136,7 +135,7 @@
                                 Demand</span></a>
                     </li>
                     <li class="nav-item">
-                        <div class="uniqueMenu nav-link"><i class="fas fa-users icon"></i></i><span
+                        <div class="uniqueMenu nav-link"><i class="fas fa-users icon"></i><span
                                 class="text">Candidate Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
@@ -167,14 +166,14 @@
                                 Management</span></a>
                     </li>
                     <li class="nav-item">
-                        <div class="uniqueMenu nav-link"><i class="fas fa-ticket-alt icon"></i></i><span
+                        <div class="uniqueMenu nav-link"><i class="fas fa-ticket-alt icon"></i><span
                                 class="text">Ticket Management</span><i class="fa fa-chevron-down arrow icon"></i>
                         </div>
                         <ul class="submenuMenu">
                             <li><a href="manage_ticket.html"><i class="fas fa-tasks icon"></i>Manage Ticket</a></li>
                             <li><a href="#"><i class="fas fa-strikethrough icon"></i>Through Agent</a></li>
                             <li><a href="payment_tracking.html"><i class="far fa-money-bill-alt icon"></i>Payment Tracking</a></li>
-                            <li><a href="#"><i class="fas fa-chart-bar icon"></i>Report & Analytics</a></li>
+                            <li><a href="report_analytics.html"><i class="fas fa-chart-bar icon"></i>Report & Analytics</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -209,8 +208,12 @@
                                 Visa Stage</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-money-check-alt icon"></i><span
-                                class="text ">Payment</span></a>
+                        <a href="#" class="nav-link"><i class="fas fa-file-invoice-dollar icon"></i><span
+                                class="text ">Accounting</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-cog icon"></i><span
+                                class="text ">Setting</span></a>
                     </li>
                     <li class="nav-item mb-5">
                         <a href="#" class="nav-link sideMenuToggler"><i class="fas fa-border-all icon"></i><span
@@ -246,20 +249,20 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">ID</th>
-                                            <th scope="col">Sponsor Name</th>
-                                            <th scope="col">VISA Category</th>
-                                            <th scope="col">VISA Amount</th>
-                                            <th scope="col">Payment Date</th>
-                                            <th scope="col">Paid</th>
-                                            <th scope="col">Payment Type</th>
-                                            <th scope="col">Stage</th>
-                                            <th scope="col">Action</th>
+                                            <th>ID</th>
+                                            <th>Sponsor Name</th>
+                                            <th>VISA Category</th>
+                                            <th>VISA Amount</th>
+                                            <th>Payment Date</th>
+                                            <th>Paid</th>
+                                            <th>Payment Type</th>
+                                            <th>Stage</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td scope="row">4623</td>
+                                            <td>4623</td>
                                             <td>Hossain Mosarraf</td>
                                             <th>Business Visitor</th>
                                             <td>$15000.00</td>
@@ -273,7 +276,7 @@
                                             </td>
                                         </tr>
                                         <tr class="tr-bg">
-                                            <td scope="row">4623</td>
+                                            <td>4623</td>
                                             <td>Hossain Mosarraf</td>
                                             <th>Business Visitor</th>
                                             <td>$15000.00</td>
@@ -287,7 +290,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td scope="row">4623</td>
+                                            <td>4623</td>
                                             <td>Hossain Mosarraf</td>
                                             <th>Business Visitor</th>
                                             <td>$15000.00</td>
@@ -301,7 +304,7 @@
                                             </td>
                                         </tr>
                                         <tr class="tr-bg">
-                                            <td scope="row">4623</td>
+                                            <td>4623</td>
                                             <td>Hossain Mosarraf</td>
                                             <th>Business Visitor</th>
                                             <td>$15000.00</td>
@@ -315,7 +318,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td scope="row">4623</td>
+                                            <td>4623</td>
                                             <td>Hossain Mosarraf</td>
                                             <th>Business Visitor</th>
                                             <td>$15000.00</td>

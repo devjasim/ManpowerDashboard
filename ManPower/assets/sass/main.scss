@@ -312,7 +312,7 @@ body {
     margin-bottom:rem(10px);
 
     li {
-        padding: rem(10px 0);
+        padding: rem(10px 0px);
         padding-left: rem(30px);
         list-style: none;
         margin-bottom:3px;
@@ -384,7 +384,7 @@ body {
             padding-bottom:rem(100px);
             .btn-dark{
                 margin-top:15px;
-                padding:10px 20px;
+                padding:6px 35px;
                 font-size:14px;
                 font-weight:300;
                 &:focus,
@@ -475,38 +475,6 @@ body {
 //footer section end
 
 // start responsive
-@media (min-width:992px) {
-    .wrapper {
-        .sideMenu {
-            transform: translateX(0);
-        }
 
-        .content {
-            margin-left: rem(238px);
-        }
-
-        &.active {
-            .sideMenu {
-                width: rem(80px);
-
-                .nav-link {
-                    text-align: center;
-
-                    .icon {
-                        margin-right: 0;
-                    }
-
-                    .text {
-                        display: none;
-                    }
-                }
-            }
-
-            .content {
-                margin-left: rem(88px);
-            }
-        }
-    }
-}
 
 

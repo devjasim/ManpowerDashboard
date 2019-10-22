@@ -1,0 +1,61 @@
+@function rem($value) {
+    @return unquote(($value/1px)/16+"rem");
+}
+
+@media (min-width:992px) {
+    .wrapper {
+        .sideMenu {
+            transform: translateX(0);
+        }
+
+        .content {
+            margin-left: rem(238px);
+        }
+
+        &.active {
+            .sideMenu {
+                width: rem(80px);
+
+                .nav-link {
+                    text-align: center;
+
+                    .icon {
+                        margin-right: 0;
+                    }
+
+                    .text {
+                        display: none;
+                    }
+                }
+            }
+
+            .content {
+                margin-left: rem(88px);
+            }
+        }
+    }
+}
+
+
+@media (max-width:992px){
+    .section-navbar{
+        .form-inline{
+            display:inline-block;
+            .search{
+                top:8px;
+            }
+        }
+        .navbar-nav{
+            display:inline-block;
+            position:relative;
+            float:right;
+
+            li{
+                display:inline-block;
+                .dropdown-menu{
+                    position:absolute;
+                }
+            }
+        }
+    }
+}
