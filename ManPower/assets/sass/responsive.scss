@@ -42,7 +42,7 @@
         .form-inline{
             display:inline-block;
             .search{
-                top:8px;
+                top:5px;
             }
         }
         .navbar-nav{
@@ -50,12 +50,52 @@
             position:relative;
             float:right;
 
-            li{
+            .nav-item{
                 display:inline-block;
                 .dropdown-menu{
                     position:absolute;
                 }
             }
         }
+    }
+    .section-navbar{ 
+        .navbar{ 
+            .navbar-nav .nav-item .badge{
+                top:15px;
+                width:12px;
+                height:12px;
+                line-height:12px;
+            }
+            form.form-inline .form-control{
+                margin-left:20px;
+            }
+            .navbar-brand span{
+                padding:15px 40px;
+            }
+        }    
+    }
+}
+
+@media (max-width:576px){
+    .section-navbar{
+        .navbar-collapse{
+            margin:20px 0;
+            .navbar-nav{
+                float:none;
+                margin-left:30px !important;
+            }
+        }
+        .navbar .dropdown-menu{
+            margin-left:0 !important;
+            margin-top:20px;
+        }
+    }
+    .content .separator .form-group label{
+        text-align:left !important;
+    }
+}
+@media (max-width:343px){
+    .wrapper{
+        margin-top:105px;
     }
 }
