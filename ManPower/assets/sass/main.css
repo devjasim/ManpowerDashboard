@@ -600,4 +600,17 @@ body h4 {
   font-size: 13px;
   color: #fff;
 }
+
+.date label {
+  margin-left: 20px;
+}
+
+.date #datepicker {
+  width: 180px;
+  margin: 0 20px 20px 20px;
+}
+
+.date #datepicker > span:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */

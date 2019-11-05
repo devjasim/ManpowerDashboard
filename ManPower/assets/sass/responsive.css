@@ -38,8 +38,26 @@
   .section-navbar .navbar-nav .nav-item {
     display: inline-block;
   }
+  .section-navbar .navbar-nav .nav-item .nav-link img {
+    width: 35px !important;
+    height: 35px;
+    margin-bottom: 10px;
+  }
   .section-navbar .navbar-nav .nav-item .dropdown-menu {
     position: absolute;
+  }
+  .section-navbar .navbar .navbar-toggler-icon {
+    line-height: 30px;
+  }
+  .section-navbar .navbar .navbar-toggler {
+    padding: 0;
+    margin-left: 5px;
+  }
+  .section-navbar .navbar .navbar-brand span {
+    background: none;
+    font-weight: 600;
+    color: #000;
+    padding: 0 !important;
   }
   .section-navbar .navbar .navbar-nav .nav-item .badge {
     top: 15px;
@@ -56,6 +74,22 @@
 }
 
 @media (max-width: 576px) {
+  .content .separator {
+    margin: 10px 0 0 0 !important;
+  }
+  .content .separator form.mr-top {
+    margin: 0;
+  }
+  .content .separator .form-group {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .section-navbar .form-inline {
+    display: inline-block;
+  }
+  .section-navbar .form-inline .search {
+    right: -14px !important;
+  }
   .section-navbar .navbar-collapse {
     margin: 20px 0;
   }
