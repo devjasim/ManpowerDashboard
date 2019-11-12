@@ -316,7 +316,7 @@ body h4 {
 
 .wrapper {
   margin-top: 4.0625rem;
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 .wrapper .sideMenu {
@@ -358,6 +358,24 @@ body h4 {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.wrapper .sideMenu .navbar-nav::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  background-color: #F5F5F5;
+}
+
+.wrapper .sideMenu .navbar-nav::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+.wrapper .sideMenu .navbar-nav::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  margin: 0 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
 }
 
 .wrapper .sideMenu .navbar-nav .nav-link {
@@ -460,6 +478,7 @@ body h4 {
   margin: 18px 5px 5px 5px;
   padding-bottom: 1.25rem;
   border-radius: 5px;
+  min-height: 90vh;
 }
 
 .content .separator .heading {

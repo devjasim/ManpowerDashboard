@@ -183,7 +183,7 @@ body {
 
 .wrapper {
     margin-top: rem($marginTop);
-    min-height:100vh;
+    min-height:95vh;
 
     .sideMenu {
         position: fixed;
@@ -224,6 +224,24 @@ body {
             width:100%;
             position:absolute;
             @extend .bg-midnightBlack;
+            &::-webkit-scrollbar-track{
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 8px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar{
+                width: 8px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar-thumb{
+                border-radius: 6px;
+                margin:0 2px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                background-color: #555;
+            }
+
 
             .nav-link {
                 position: relative;
@@ -358,6 +376,7 @@ body {
         padding-bottom:rem(20px);
         @extend .bg-darkWhite;
         border-radius:5px;
+        min-height:90vh;
         .heading{
             padding-bottom:rem(20px);
             font-size:rem(24px);
