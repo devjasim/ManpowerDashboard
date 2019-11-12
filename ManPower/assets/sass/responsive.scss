@@ -3,6 +3,28 @@
 }
 
 @media (min-width:992px) {
+    .navbar.acTive{
+        .brand{
+           padding:19px 6.5px !important;
+            .p-bnd{
+                display:none;
+            }
+            img{
+                display:block !important;
+                width:35px;
+                border-radius:50px;
+                display:inline-block !important;
+            }
+            i{
+                margin-left:0 !important;
+            }
+            .braNd.right {
+                -moz-transform:rotate(180deg);
+                -webkit-transform:rotate(180deg);
+                transform:rotate(180deg);
+            }
+        } 
+    } 
     .wrapper {
         .sideMenu {
             transform: translateX(0);
@@ -16,21 +38,29 @@
             .sideMenu {
                 width: rem(80px);
 
-                .nav-link {
-                    text-align: center;
-
-                    .icon {
-                        margin-right: 0;
+                .nav-item {
+                    .submenuMenu a{
+                        display:none;
                     }
-
-                    .text {
-                        display: none;
+                    .submenuMenu a i{
+                        display:block !important;
+                    }
+                    .nav-link {
+                        text-align: center;
+    
+                        .icon {
+                            margin-right: 0;
+                        }
+    
+                        .text {
+                            display: none;
+                        }
                     }
                 }
             }
 
             .content {
-                margin-left: rem(88px);
+                margin-left: rem(95px) !important;
             }
         }
     }
@@ -38,6 +68,15 @@
 
 
 @media (max-width:992px){
+    .navbar{
+        .brand{
+            background:#fff !important;
+            color:#000 !important;
+           i{
+               display:None;
+           }
+        }
+    }    
     .wrapper{
         .content{
             margin-left:rem(15px) !important;

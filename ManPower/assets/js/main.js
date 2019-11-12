@@ -1,3 +1,4 @@
+// sidemenu 
 $(function() {
 	var Accordion = function(el, multiple) {
 		this.el = el || {};
@@ -25,12 +26,29 @@ $(function() {
 	var sideDrop = new Accordion($('#sideDrop'), false);
 });
 
+// sidemenu 
 
+
+
+// menu resize 
 $(document).ready(function(){
     $(".sideMenuToggler").on("click",function(){
         $(".wrapper").toggleClass("active");
     });
 });
+
+$(document).ready(function(){
+    $(".braNd").on("click",function(){
+        $(".navbar").toggleClass("acTive");
+    });
+});
+// menu resize 
+
+// resize menu rotate 
+	$(".braNd").on("click", function () {
+		$(this).toggleClass("right");
+	})
+// resize menu rotate 
 
 $(function () {
 	$("#datepicker").datepicker({ 

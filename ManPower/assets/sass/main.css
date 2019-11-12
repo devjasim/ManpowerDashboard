@@ -23,7 +23,7 @@ p {
   color: #cec0c0;
 }
 
-.bg-solidBlack, .section-navbar .navbar .navbar-brand span {
+.bg-solidBlack, .section-navbar .navbar .navbar-brand span.brand {
   background-color: #111316;
 }
 
@@ -59,7 +59,7 @@ p {
   background-color: #FFFFFF;
 }
 
-.text-darkWhite, .section-navbar .navbar .navbar-brand span, .sideMenu .nav-item .nav-link .text, .submenuMenu li a {
+.text-darkWhite, .section-navbar .navbar .navbar-brand span.brand, .sideMenu .nav-item .nav-link .text, .submenuMenu li a {
   color: #FFFFFF;
 }
 
@@ -249,11 +249,33 @@ body h4 {
   right: 15px;
 }
 
-.section-navbar .navbar .navbar-brand span {
+.section-navbar .navbar .navbar-brand span.brand {
+  cursor: pointer;
   font-weight: 400;
   text-transform: lowercase;
   font-size: 25px;
-  padding: 19px 59px;
+  padding: 19px 31.5px;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+}
+
+.section-navbar .navbar .navbar-brand span.brand .p-bnd {
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  text-decoration: none;
+  color: #fff;
+}
+
+.section-navbar .navbar .navbar-brand span.brand img {
+  display: none;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+.section-navbar .navbar .navbar-brand span.brand .braNd {
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
 }
 
 .section-navbar .navbar .nav-link {
@@ -326,8 +348,9 @@ body h4 {
   left: 0;
   margin: 4.0625rem auto auto;
   width: 14.875rem;
-  -webkit-transition: all ease 0.25s;
-  transition: all ease 0.25s;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   z-index: 1000;
@@ -362,17 +385,17 @@ body h4 {
 
 .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: #F5F5F5;
 }
 
 .wrapper .sideMenu .navbar-nav::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   background-color: #F5F5F5;
 }
 
 .wrapper .sideMenu .navbar-nav::-webkit-scrollbar-thumb {
-  border-radius: 6px;
+  border-radius: 4px;
   margin: 0 2px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555;
