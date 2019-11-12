@@ -55,7 +55,7 @@ p {
   color: #FCFCFC;
 }
 
-.bg-darkWhite, .section-navbar .navbar, .section-navbar .navbar .dropdown .dropdown-menu, .content .separator {
+.bg-darkWhite, .section-navbar .navbar, .section-navbar .navbar .dropdown .dropdown-menu, .content {
   background-color: #FFFFFF;
 }
 
@@ -472,13 +472,14 @@ body h4 {
 
 .content {
   margin-bottom: 15px;
+  margin: 15px 15px 20px 255px !important;
+  border-radius: 5px;
 }
 
 .content .separator {
-  margin: 18px 5px 5px 5px;
   padding-bottom: 1.25rem;
-  border-radius: 5px;
-  min-height: 90vh;
+  width: 100%;
+  display: inline-block;
 }
 
 .content .separator .heading {

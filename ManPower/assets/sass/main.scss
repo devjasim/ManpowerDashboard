@@ -371,12 +371,13 @@ body {
 
 .content {
     margin-bottom:15px;
+    margin:15px 15px 20px 255px !important;
+    @extend .bg-darkWhite;
+    border-radius:5px;
     .separator{
-        margin:18px 5px 5px 5px;
         padding-bottom:rem(20px);
-        @extend .bg-darkWhite;
-        border-radius:5px;
-        min-height:90vh;
+        width:100%;
+        display:inline-block;
         .heading{
             padding-bottom:rem(20px);
             font-size:rem(24px);
