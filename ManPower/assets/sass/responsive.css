@@ -1,9 +1,9 @@
 @media (min-width: 992px) {
-  .navbar.acTive .brand {
-    padding: 19px 6.5px !important;
-  }
-  .navbar.acTive .brand .p-bnd {
+  .navbar.acTive .p-bnd {
     display: none;
+  }
+  .navbar.acTive .brand {
+    padding: 19px 22.5px !important;
   }
   .navbar.acTive .brand img {
     display: block !important;
@@ -14,7 +14,7 @@
   .navbar.acTive .brand i {
     margin-left: 0 !important;
   }
-  .navbar.acTive .brand .braNd.right {
+  .navbar.acTive .braNd.right {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
@@ -49,12 +49,12 @@
 }
 
 @media (max-width: 992px) {
-  .navbar .brand {
+  .navbar .braNd {
+    display: None;
+  }
+  .navbar .p-bnd {
     background: #fff !important;
     color: #000 !important;
-  }
-  .navbar .brand i {
-    display: None;
   }
   .wrapper .content {
     margin-left: 0.9375rem !important;

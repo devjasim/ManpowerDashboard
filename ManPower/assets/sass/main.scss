@@ -84,6 +84,13 @@ body {
 }
 
 .section-navbar {
+    .braNd {
+        -moz-transition: all .5s linear;
+        -webkit-transition: all .5s linear;
+        transition: all .5s linear;
+        font-size:20px;
+        cursor:pointer;
+    }
     .navbar {
         padding-left: 0;
         @extend .bg-darkWhite;
@@ -112,18 +119,18 @@ body {
         }
 
         .navbar-brand {
+            .p-bnd{
+                transition:all ease 1s;
+                text-decoration:none;
+                color:#fff;
+            }
             span.brand {
                 cursor:pointer;
-                .p-bnd{
-                    transition:all ease 1s;
-                    text-decoration:none;
-                    color:#fff;
-                }
                 @extend .text-darkWhite;
                 font-weight: 400;
                 text-transform: lowercase;
                 font-size: 25px;
-                padding: 19px 31.5px;
+                padding: 19px 59px;
                 @extend .bg-solidBlack;
                 transition:all ease .5s;
                 -webkit-transition:all ease .5s;
@@ -131,11 +138,6 @@ body {
                 img{
                     display:none;
                     transition:.5s all ease;
-                }
-                .braNd {
-                    -moz-transition: all .5s linear;
-                    -webkit-transition: all .5s linear;
-                    transition: all .5s linear;
                 }
             }
         }

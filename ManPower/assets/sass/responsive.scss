@@ -4,11 +4,12 @@
 
 @media (min-width:992px) {
     .navbar.acTive{
+        .p-bnd{
+            display:none;
+        }
         .brand{
-           padding:19px 6.5px !important;
-            .p-bnd{
-                display:none;
-            }
+           padding:19px 22.5px !important;
+           
             img{
                 display:block !important;
                 width:35px;
@@ -18,11 +19,11 @@
             i{
                 margin-left:0 !important;
             }
-            .braNd.right {
-                -moz-transform:rotate(180deg);
-                -webkit-transform:rotate(180deg);
-                transform:rotate(180deg);
-            }
+        }
+        .braNd.right {
+            -moz-transform:rotate(180deg);
+            -webkit-transform:rotate(180deg);
+            transform:rotate(180deg);
         } 
     } 
     .wrapper {
@@ -69,12 +70,12 @@
 
 @media (max-width:992px){
     .navbar{
-        .brand{
+        .braNd{
+            display:None;
+        }
+        .p-bnd{
             background:#fff !important;
             color:#000 !important;
-           i{
-               display:None;
-           }
         }
     }    
     .wrapper{

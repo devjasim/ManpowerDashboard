@@ -203,6 +203,13 @@ body h4 {
   margin-top: 20px;
 }
 
+.section-navbar .braNd {
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .section-navbar .navbar {
   padding-left: 0;
   border-bottom: 1px solid #f1f1f2;
@@ -249,33 +256,28 @@ body h4 {
   right: 15px;
 }
 
-.section-navbar .navbar .navbar-brand span.brand {
-  cursor: pointer;
-  font-weight: 400;
-  text-transform: lowercase;
-  font-size: 25px;
-  padding: 19px 31.5px;
-  transition: all ease .5s;
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s;
-}
-
-.section-navbar .navbar .navbar-brand span.brand .p-bnd {
+.section-navbar .navbar .navbar-brand .p-bnd {
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
   text-decoration: none;
   color: #fff;
 }
 
+.section-navbar .navbar .navbar-brand span.brand {
+  cursor: pointer;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 25px;
+  padding: 19px 59px;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+}
+
 .section-navbar .navbar .navbar-brand span.brand img {
   display: none;
   -webkit-transition: .5s all ease;
   transition: .5s all ease;
-}
-
-.section-navbar .navbar .navbar-brand span.brand .braNd {
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
 }
 
 .section-navbar .navbar .nav-link {
