@@ -28,11 +28,8 @@
   .wrapper.active .sideMenu {
     width: 5rem;
   }
-  .wrapper.active .sideMenu .nav-item .submenuMenu a {
+  .wrapper.active .sideMenu .nav-item .submenuMenu li .text {
     display: none;
-  }
-  .wrapper.active .sideMenu .nav-item .submenuMenu a i {
-    display: block !important;
   }
   .wrapper.active .sideMenu .nav-item .nav-link {
     text-align: center;

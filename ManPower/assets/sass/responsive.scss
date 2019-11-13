@@ -40,11 +40,8 @@
                 width: rem(80px);
 
                 .nav-item {
-                    .submenuMenu a{
+                    .submenuMenu li .text{
                         display:none;
-                    }
-                    .submenuMenu a i{
-                        display:block !important;
                     }
                     .nav-link {
                         text-align: center;
